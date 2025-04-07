@@ -5,7 +5,7 @@ const Card = ({ imgSrc, title, handleClick }) => {
     <div
       onClick={handleClick}
       className={
-        "flex flex-col bg-gray-100 shadow-md rounded-lg hover:shadow-[0_0_15px_5px_rgba(220,38,38,0.7)] transition-all duration-200 z-50"
+        "flex flex-col items-center cursor-pointer bg-gray-100 shadow-md rounded-lg hover:shadow-[0_0_15px_5px_rgba(220,38,38,0.7)] transition-all duration-200 z-50"
       }
     >
       <img

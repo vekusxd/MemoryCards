@@ -2,6 +2,7 @@ import { data, getNewCard, shuffle } from "./data";
 import Card from "./Card";
 import BloodBottom from "./assets/blood-bottom.png";
 import { useEffect, useState } from "react";
+import appStyles from "./App.module.css";
 
 const App = () => {
   const [cards, setCards] = useState([]);
@@ -50,7 +51,9 @@ const App = () => {
         </div>
       </div>
 
-      <div className="flex gap-4 flex-wrap justify-between mx-3 mt-7 z-40">
+      <div
+        className={`flex gap-4 flex-wrap justify-between mx-3 mt-7 z-40 ${appStyles.cardGrid}`}
+      >
         {cards.map((e) => (
           <Card
             key={e.name}
